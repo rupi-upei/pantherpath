@@ -1,0 +1,5 @@
+streamlit>=1.40
+requests
+folium
+streamlit-folium
+faster-whisper
