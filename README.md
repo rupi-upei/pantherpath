@@ -2,11 +2,11 @@
 
 A route planner for evening student drop-offs. Enter up to 8 addresses, and it finds the best order to drop everyone off, starting and ending at UPEI.
 
-> Student project. Not affiliated with UPEI or Panther Patrol.
+It is my personal Student project. Not affiliated with UPEI or Panther Patrol.
 
 ## The problem
 
-UPEI's Panther Patrol drives students home every hour, up to 5 at a time. The driver has to decide the drop-off order on the fly. A bad order wastes time for the driver and for every student still in the van.
+UPEI's Panther Patrol drives students home every hour, up to 5 at a time. The driver has to decide the drop-off order. A bad order wastes time for the driver and for every student still in the van.
 
 ## How it works
 
