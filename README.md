@@ -1,7 +1,7 @@
 cat > README.md <<'EOF'
 # PantherPath
 
-A route planner for evening student drop-offs. Enter (or say) up to 8 addresses, and it finds the best order to drop everyone off, starting and ending at UPEI.
+A route planner for evening student drop-offs. Enter up to 8 addresses, and it finds the best order to drop everyone off, starting and ending at UPEI.
 
 > Student project. Not affiliated with UPEI or Panther Patrol.
 
@@ -19,25 +19,29 @@ Two goals to choose from:
 - **Fastest total trip:** shortest round trip for the driver (the Traveling Salesman Problem).
 - **Lowest average wait:** gets students home sooner on average (the minimum latency problem).
 
-You can type addresses or speak them. Voice input uses faster-whisper, which runs on the server, so recordings aren't sent to a third party. Nothing is saved.
+Addresses aren't saved anywhere.
+
+## Features
+
+- Drop-off order with estimated arrival times
+- Route drawn on a map
+- One tap to open the route in Google Maps
 
 ## Run it locally
 
-Needs Python 3.12.
-
-    python3.12 -m venv venv
+    python3 -m venv venv
     source venv/bin/activate
     pip install -r requirements.txt
     streamlit run app.py
 
 ## Built with
 
-Python, Streamlit, Folium, OpenStreetMap (Nominatim, OSRM), faster-whisper
+Python, Streamlit, Folium, OpenStreetMap (Nominatim, OSRM)
 
-## Limits
+## Limits and next steps
 
 - Drive times don't include live traffic.
 - The free OpenStreetMap services are fine for a demo, not for heavy daily use.
-- Speech can mishear street names, so check the box before planning.
+- Planned: built-in voice input for addresses. For now, phone keyboard dictation works.
 EOF
-head -3 README.md
+head -1 README.md
