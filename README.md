@@ -1,4 +1,3 @@
-cat > README.md <<'EOF'
 # PantherPath
 
 A route planner for evening student drop-offs. Enter up to 8 addresses, and it finds the best order to drop everyone off, starting and ending at UPEI.
@@ -43,5 +42,3 @@ Python, Streamlit, Folium, OpenStreetMap (Nominatim, OSRM)
 - Drive times don't include live traffic.
 - The free OpenStreetMap services are fine for a demo, not for heavy daily use.
 - Planned: built-in voice input for addresses. For now, phone keyboard dictation works.
-EOF
-head -1 README.md
